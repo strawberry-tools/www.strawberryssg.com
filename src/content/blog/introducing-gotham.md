@@ -31,7 +31,7 @@ Here's some sites already building with Gotham:
 
 - <https://www.gothamhq.com> - this site :wink:
 - <https://www.feliciano.tech> - my personal site
-- <https:/www.chayev.com> - the personal site of my fellow co-founder
+- <https://www.chayev.com> - the personal site of my fellow co-founder
 - <https://www.TheReserveForce.com> - a resource website for U.S. Military reservists
 
 Gotham v0.10.0 is completely backwards compatible with Hugo v0.79.0 extended, meaning if you have an existing Hugo site, you need to simply download and install Gotham to start using it with your current website.
