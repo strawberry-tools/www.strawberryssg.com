@@ -1,0 +1,35 @@
+baseurl: "https://www.gothamhq.com/"
+title: "GothamHQ"
+theme: gothamhq-2020
+
+googleAnalytics: ""
+
+enableEmoji: true
+
+params:
+  description: "The online home for the Gotham static site generator."
+  tagline: "A modern static site generator with a focus on documentation and community."
+  mailchimpURL: "//GothamHQ.us10.list-manage.com/subscribe/post?u=7f338e01cc17cfe5cb4c64874&amp;id=67298dfc5c"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menu:
+  main:
+    - name: "Features"
+      url: "/features/"
+      weight: 5
+    - name: "Download"
+      url: "/download/"
+      weight: 10
+    - name: "Blog"
+      url: "/blog/"
+      weight: 15
+    - name: "Docs"
+      url: "https://docs.gothamhq.com"
+      weight: 20
+    - name: "Contact Us"
+      url: "/contact/"
+      weight: 25
