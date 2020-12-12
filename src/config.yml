@@ -2,7 +2,7 @@ baseurl: "https://www.gothamhq.com/"
 title: "GothamHQ"
 theme: gothamhq-2020
 
-googleAnalytics: ""
+googleAnalytics: "UA-168801020-5"
 
 enableEmoji: true
 
