@@ -43,7 +43,7 @@ In terms of what features and changes that have been uniquely added to Gotham, t
 While we announce Gotham today, we've already been working on it for months and we still have tons more to do.
 The plan of getting Gotham to v1.0 involves not the development (Gotham is already stable) but the resources surrounding it.
 We're going to put a lot of time and effort into filling out the [Gotham Docs][gth-docs] website with all of the content it needs.
-It's an area we're currently lacking it.
+It's an area we're currently lacking in.
 There is also effort in the theming space to make it easier for users to find the themes they're looking for as well as share the ones they have made.
 
 
