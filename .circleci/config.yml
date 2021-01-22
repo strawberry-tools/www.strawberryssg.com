@@ -10,18 +10,14 @@ workflows:
 jobs:
   build:
     docker:
-      - image: hubci/gotham:0.10
+      - image: hubci/gotham:0.11
     steps:
       - checkout
       - run: git submodule update --init --recursive
       - run:
           name: "Build Website With Gotham"
           command: |
-            if [[ $CIRCLE_BRANCH == "master" ]]; then
-              HUGO_ENV=production gotham -v -s src/
-            else
-              HUGO_ENV=staging gotham -v -s src/ --config config.yml,staging-config.yml
-            fi
+            HUGO_ENV=production gotham -v -s src/
       - run:
           name: "Test Website"
           command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
@@ -42,7 +38,5 @@ jobs:
             echo 'sweb0.revidian.net ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHyIA/VJN9GHUeYUvauk+sGsQcvk8FpXErixwvgqQmW1pdje/Vo4RyAAskzdgoR+HUYOWM1gLW7ZFZHL8F//sqw=' >> ~/.ssh/known_hosts
 
             if [[ $CIRCLE_BRANCH == "master" ]]; then
-              rsync -va --delete src/public/ root@sweb0.revidian.net:/static-websites/gothamhq/www/public_html
-            else
-              rsync -va --delete src/public/ root@sweb0.revidian.net:/static-websites/gothamhq/staging-www/public_html
+              rsync -va --delete src/public/ root@sweb0.revidian.net:/static-websites/strawberryssg/www/public_html
             fi
