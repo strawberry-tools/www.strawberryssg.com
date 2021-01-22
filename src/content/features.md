@@ -1,14 +1,14 @@
 ---
 type: mpage
-title: "Features of Gotham"
+title: "Features of Strawberry"
 ---
 
-Gotham is built upon the strong foundation of [Hugo](https://gohugo.io).
+Strawberry is built upon the strong foundation of [Hugo](https://gohugo.io).
 99% of our features (and code for that matter) come from Hugo.
 You can learn about all of Hugo's features (if you're unfamiliar) [here](https://gohugo.io/about/features/).
 
 
-## Features Unique to Gotham
+## Features Unique to Strawberry
 
 ### Sitemap Page Exclusion
 
@@ -27,12 +27,12 @@ sitemap:
 My page.... blah blah blah.
 ```
 
-While this setting can be done page-by-page to opt them out of the sitemap, you can also set this in your Gotham config file to opt-out all pages by default.
+While this setting can be done page-by-page to opt them out of the sitemap, you can also set this in your Strawberry config file to opt-out all pages by default.
 Then, you can manually opt-in pages.
 
 ### Menu Items Support Opening in New Tabs
 
-If you have a menu item that you'd prefer to open in a new tab (or window, depending on browser), you can now do so via the Gotham config file.
+If you have a menu item that you'd prefer to open in a new tab (or window, depending on browser), you can now do so via the Strawberry config file.
 Here's an example:
 
 ```yaml
@@ -45,7 +45,7 @@ menu:
     - name: "Blog"
       url: "/blog/"
     - name: "Twitter"
-      url: "https://twitter.com/GothamHQ_"
+      url: "https://twitter.com/StrawberrySSG"
       newtab: true
 ```
 
@@ -64,7 +64,7 @@ gotham serve --open
 
 ### YouTube Shortcode
 
-The YouTube shortcode that already comes with Gotham (and Hugo) got three additional parameters:
+The YouTube shortcode that already comes with Strawberry (and Hugo) got three additional parameters:
 
 - The shortcode has a title parameter.
 - The shortcode has start and stop parameters, measured in seconds.
@@ -98,7 +98,7 @@ which would render as:
 
 ### Digital Asset Links
 
-A Gotham site can generate an Asset Links file (`assetlinks.json`) by providing two key bits of information in your Gotham config.
+A Strawberry site can generate an Asset Links file (`assetlinks.json`) by providing two key bits of information in your Strawberry config.
 
 ```yaml
 #... gotham config
@@ -114,7 +114,7 @@ Resources:
 
 ### Mastodon Shortcode
 
-Embed Mastodon toots in your Gotham pages with this Mastodon shortcode.
+Embed Mastodon toots in your Strawberry pages with this Mastodon shortcode.
 You can pass the toot URL and optionally, a width and height.
 Keep in mind that the width and height are considered suggestions to Mastodon and it will render mostly based on the content it's trying to show.
 
@@ -132,4 +132,4 @@ which would render as:
 ## Changes from Hugo
 
 **Goldmark** -  the Markdown renderer has a setting on whether or not to allow HTML in your Markdown files.
-Hugo has this set to false/off by default while Gotham has this set to true/on.
+Hugo has this set to false/off by default while Strawberry has this set to true/on.
