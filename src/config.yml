@@ -1,5 +1,5 @@
-baseurl: "https://www.gothamhq.com/"
-title: "GothamHQ"
+baseurl: "https://www.strawberry.com/"
+title: "StrawberrySSG"
 theme: gothamhq-2020
 
 googleAnalytics: "UA-168801020-5"
@@ -7,7 +7,7 @@ googleAnalytics: "UA-168801020-5"
 enableEmoji: true
 
 params:
-  description: "The online home for the Gotham static site generator."
+  description: "The online home for the Strawberry static site generator."
   tagline: "A modern static site generator with a focus on documentation and community."
   mailchimpURL: "//GothamHQ.us10.list-manage.com/subscribe/post?u=7f338e01cc17cfe5cb4c64874&amp;id=67298dfc5c"
 
@@ -28,7 +28,7 @@ menu:
       url: "/blog/"
       weight: 15
     - name: "Docs"
-      url: "https://docs.gothamhq.com"
+      url: "https://docs.strawberryssg.com"
       weight: 20
     - name: "Showcase"
       url: "/showcase/"

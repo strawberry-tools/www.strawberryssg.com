@@ -1,3 +1,3 @@
 ---
-title: "Gotham Blog"
+title: "Strawberry Blog"
 ---
