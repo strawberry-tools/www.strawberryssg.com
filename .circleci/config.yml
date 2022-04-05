@@ -10,14 +10,14 @@ workflows:
 jobs:
   build:
     docker:
-      - image: hubci/gotham:0.11
+      - image: hubci/strawberry:0.21.0
     steps:
       - checkout
       - run: git submodule update --init --recursive
       - run:
-          name: "Build Website With Gotham"
+          name: "Build Website With Strawberry"
           command: |
-            HUGO_ENV=production gotham -v -s src/
+            HUGO_ENV=production strawberry -v -s src/
       - run:
           name: "Test Website"
           command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
@@ -27,7 +27,7 @@ jobs:
             - public
   deploy:
     docker:
-      - image: hubci/gotham:0.10
+      - image: hubci/gotham:0.21.0
     steps:
       - attach_workspace:
           at: src

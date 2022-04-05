@@ -1,6 +1,6 @@
 baseurl: "https://www.StrawberrySSG.com/"
 title: "StrawberrySSG"
-theme: gothamhq-2020
+theme: strawberry-2022
 
 googleAnalytics: "UA-168801020-5"
 
@@ -33,6 +33,6 @@ menu:
     - name: "Showcase"
       url: "/showcase/"
       weight: 20
-    - name: "Contact Us"
+    - name: "Contact"
       url: "/contact/"
       weight: 25

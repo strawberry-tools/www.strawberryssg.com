@@ -1,0 +1,98 @@
+@import "colors";
+
+main{
+	flex-grow: 1;
+	padding-top: 70px; /* To counter the fixed nav bar */
+}
+
+div.hero{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #06c;
+	background-image:
+		linear-gradient( rgba( 255, 255, 255, 0.2 ) 2px, transparent 2px),
+		linear-gradient( 90deg, rgba(255, 255, 255, 0.2) 2px, transparent 1px),
+		linear-gradient( rgba( 255, 255, 255, 0.1) 1px, transparent 1px),
+		linear-gradient( 90deg, rgba( 255, 255, 255, 0.1) 1px, transparent 1px);
+	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+	background-repeat: repeat;
+	padding-bottom: 40px;
+
+	h1{
+		margin: 40px 10%;
+		background-color: $black;
+		padding: 5px 10px;
+		width: 80%;
+		height: 65px;
+		color: white;
+	}
+
+	div{
+		border: 2px white dotted;
+		width: 25%;
+		color: white;
+		text-align: center;
+
+		i,
+		span{
+		}
+
+		i{
+			font-size: 4.0rem;
+		}
+
+		span{
+			display: block;
+			font-size: 3.2rem;
+		}
+	}
+}
+
+
+
+#tile-grid{
+	margin: 100px auto 20px;
+	display: grid;
+	grid-template-columns: 50%;
+	column-gap: 20px;
+	grid-template-rows: 200px;
+	row-gap: 20px;
+	width: 80%;
+	max-width: 1000px;
+
+	.tile{
+		border-radius: 8px;
+		background: #ffffff;
+		padding: 15px;
+	}
+		#quickstart-tile{
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+}
+
+
+
+/************************************************
+ * <= 1000px width
+ * *********************************************/
+@media(max-width: 1000px){
+	#tile-grid{
+		grid-template-columns: 50.0% 50.0%;
+	}
+}
+
+
+/************************************************
+ * <= 750px width
+ * *********************************************/
+@media(max-width: 750px){
+	#tile-grid{
+		grid-template-columns: 100.0%;
+		#quickstart-tile{
+			grid-column-end: 1;
+		}
+	}
+}

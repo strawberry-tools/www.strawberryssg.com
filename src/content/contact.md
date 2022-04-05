@@ -1,5 +1,4 @@
 ---
-type: mpage
 title: "Contact Us"
 ---
 

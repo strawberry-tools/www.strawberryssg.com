@@ -1,0 +1,36 @@
+{{- define "main" }}
+<main class="single">
+	<div class="hero">
+			<h1>A fast and secure static website in three steps</h1>
+			<div>
+				<i class="fa fa-markdown"></i>
+				<span>Markdown</span>
+			</div>
+			<div>
+				<i class="fa fa-paint-brush"></i>
+				<span>Theme</span>
+			</div>
+			<div>
+				<i class="fa fa-gears"></i>
+				<span>Build</span>
+			</div>
+	</div>
+	<h1>{{ .Site.Title }}</h1>
+	<p>{{ .Site.Params.tagline }}</p>
+	{{ if isset .Site.Params "mailchimpurl" }}{{ partial "mailchimp-signup" . }}{{ end }}
+	<div id="benefits">
+			<div>
+				<h2><i class="fa fa-users"></i>Community</h2>
+				<p>A tool that embraces and supports the community. Built for us by us.</p>
+			</div>
+			<div>
+				<h2><i class="fa fa-book"></i>Documentation</h2>
+				<p>A focus on clear and correct documentation that is intuitive to navigate.</p>
+			</div>
+			<div>
+				<h2><i class="fa fa-check"></i>Sign Up Today</h2>
+				<p>Sign up to stay up to date with Strawberry. We’ll share updates as they become available.</p>
+			</div>
+	</div>
+</main>
+{{ end }}
